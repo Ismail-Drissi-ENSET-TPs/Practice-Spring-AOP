@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(value = {"com.ismaildrs"})
 public class Main {
     public static void main(String[] args) {
-        new SecurityContext().authenticate("root", "root", new String[]{"SUPERADMIN"});
+        new SecurityContext().authenticate("root", "root", new String[]{"WOW"});
         ApplicationContext context = new AnnotationConfigApplicationContext(Main.class);
         IMetier metier = context.getBean(IMetier.class);
         System.out.println(metier.getClass().getName());
